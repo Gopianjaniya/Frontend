@@ -1,0 +1,432 @@
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                }
+                                /* navbar ========== */
+                                
+                                .navbar {
+                                    display: flex;
+                                    background-color: rgb(250, 245, 245);
+                                    padding: 10px;
+                                    padding-left: 55px;
+                                    font-size: 22px;
+                                }
+                                
+                                .navbar li:hover {
+                                    text-decoration: underline;
+                                }
+                                
+                                .navbar ul {
+                                    display: flex;
+                                    gap: 36px;
+                                    list-style-type: none;
+                                    color: rgb(114, 110, 110);
+                                }
+                                
+                                .navbar,
+                                .selection {
+                                    /* border: 2px solid rgb(197, 24, 24); */
+                                    gap: 898px;
+                                }
+                                
+                                .navbar .selection {
+                                    margin-left: -30px;
+                                }
+                                
+                                .selection select {
+                                    /* border: 2px solid rgb(197, 24, 24); */
+                                    margin-left: 20px;
+                                    padding: 10px;
+                                    margin-top: -8px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    font-size: 18px;
+                                    transition: 0.2s ease-in-out;
+                                }
+                                
+                                .selection select:hover {
+                                    background-color: #ebe4e4;
+                                    transition: 0.2s ease-in-out;
+                                }
+                                /* navbar -2 =============== */
+                                
+                                .multishop {
+                                    display: flex;
+                                    background-color: rgb(253, 252, 252);
+                                    padding: 30px;
+                                    font-weight: 900;
+                                    /* border: 2px solid red; */
+                                    padding-left: 54px;
+                                }
+                                
+                                .multi,
+                                .shop {
+                                    font-size: 36px;
+                                    padding: 10px;
+                                }
+                                
+                                .multi {
+                                    background-color: black;
+                                    color: yellow;
+                                }
+                                
+                                .shop {
+                                    background-color: yellow;
+                                    color: black;
+                                }
+                                
+                                .search input {
+                                    margin-left: 300px;
+                                    margin-top: 12px;
+                                    padding: 11px;
+                                    padding-left: 0px;
+                                    width: 30rem;
+                                    font-size: 20px;
+                                }
+                                
+                                .search ::placeholder {
+                                    padding: 20px;
+                                }
+                                
+                                .search label {
+                                    border: 1px solid rgb(136, 134, 134);
+                                    padding: 11px;
+                                    padding-bottom: 12px;
+                                    margin-left: -6px;
+                                    background-color: #f8f6f6;
+                                    color: rgb(149, 150, 135);
+                                    /* border: 2px solid red; */
+                                }
+                                
+                                .search label i {
+                                    color: #ffd333;
+                                }
+                                
+                                .contect h2,
+                                h3 {
+                                    margin-left: 280px;
+                                }
+                                
+                                .contect h3 {
+                                    font-size: 20px;
+                                    padding: 4px;
+                                    color: rgb(139, 135, 135);
+                                }
+                                
+                                .contect h2 {
+                                    font-size: 29px;
+                                    color: black;
+                                }
+                                /* nav 3 ============= */
+                                
+                                .nav3 {
+                                    background-color: #645d5d;
+                                }
+                                
+                                .nav3 select {
+                                    padding: 27px;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    color: #423e3e;
+                                    margin-left: 50px;
+                                    padding-right: 170px;
+                                    border: #FFD333;
+                                    background-color: #ffd333;
+                                }
+                                
+                                .nav3 select:hover {
+                                    background-color: #ffd333e8;
+                                }
+                                
+                                .nav3 select option {
+                                    background-color: #fff;
+                                }
+                                
+                                .menu ul {
+                                    display: flex;
+                                    list-style-type: none;
+                                    gap: 30px;
+                                    justify-content: center;
+                                    margin-top: -50px;
+                                    margin-left: -370px;
+                                    font-size: 22px;
+                                    font-weight: 520;
+                                }
+                                
+                                .menu ul li select {
+                                    color: white;
+                                    border: none;
+                                }
+                                
+                                .menu ul li:hover {
+                                    color: #FFD333;
+                                }
+                                
+                                .menu ul select:hover {
+                                    color: #FFD333;
+                                }
+                                
+                                .menu select {
+                                    background-color: #645d5d;
+                                    border: none;
+                                    font-size: 22px;
+                                    font-weight: 100;
+                                }
+                                
+                                .section h2 {
+                                    /* border: 2px solid red; */
+                                    display: flex;
+                                    justify-content: end;
+                                    gap: 50px;
+                                    margin-top: -27px;
+                                    margin-right: 100px;
+                                }
+                                
+                                .section h2 p i {
+                                    /* border: 2px solid red; */
+                                    font-size: 24px;
+                                    color: #FFD333;
+                                }
+                                
+                                .section h2 p:hover {
+                                    cursor: pointer;
+                                }
+                                
+                                .front-page {
+                                    display: flex;
+                                    margin-top: 60px;
+                                    margin-left: 50px;
+                                    /* border: 2px solid red; */
+                                }
+                                
+                                .front-page .two-photo img {
+                                    /* border: 2px solid red; */
+                                    width: 400px;
+                                    height: 225px;
+                                    margin: 35px;
+                                    margin-top: 0px;
+                                    transition: 0.4s ease-in-out;
+                                }
+                                
+                                .front-page img {
+                                    margin-bottom: 60px;
+                                    height: 490px;
+                                    /* border: 2px solid red; */
+                                }
+                                
+                                .content h1 {
+                                    display: flex;
+                                    margin-top: -430px;
+                                    margin-left: 400px;
+                                    font-size: 80px;
+                                    color: rgb(223, 214, 214);
+                                }
+                                
+                                .content p {
+                                    display: flex;
+                                    margin-top: 30px;
+                                    margin-left: 300px;
+                                    color: rgb(223, 214, 214);
+                                    font-size: 30px;
+                                    width: 670px;
+                                    display: block;
+                                }
+                                
+                                .content button {
+                                    margin-left: 580px;
+                                    margin-top: 40px;
+                                    padding: 17px;
+                                    padding-right: 45px;
+                                    padding-left: 36px;
+                                    background-color: unset;
+                                    border: 1px solid white;
+                                    color: white;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    letter-spacing: 0.8px;
+                                    transition: 0.4s ease-in-out;
+                                    border-radius: 1px;
+                                }
+                                
+                                .content button:hover {
+                                    background-color: #fff;
+                                    color: black;
+                                    transition: 0.4s ease-in-out;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    border-radius: 1px;
+                                }
+                                /*  for small image content=========  */
+                                
+                                .s-img1-content,
+                                .s-img2-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: end;
+                                    justify-content: baseline;
+                                    gap: 284px;
+                                }
+                                
+                                .s-img1-content div {
+                                    margin-top: -400px;
+                                    margin-right: 240px;
+                                }
+                                
+                                .s-img2-content div {
+                                    margin-top: -140px;
+                                    margin-right: 240px;
+                                }
+                                
+                                .s-img1-content .s-img2-content div,
+                                div {
+                                    color: white;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                }
+                                
+                                .s-img1-content h1 {
+                                    margin: -160px;
+                                    margin-right: 170px;
+                                    margin-top: -280px;
+                                    font-weight: 1000;
+                                }
+                                
+                                .s-img2-content h1 {
+                                    margin: -160px;
+                                    margin-right: 180px;
+                                    margin-top: -270px;
+                                    font-weight: 1000;
+                                }
+                                
+                                .s-img1-content button {
+                                    margin-top: -100px;
+                                    margin-right: 210px;
+                                    padding: 18px 40px 15px 30px;
+                                    font-size: 16px;
+                                    background-color: hwb(47 2% 3%);
+                                    border: none;
+                                    transition: 0.2s ease-in;
+                                }
+                                
+                                .s-img1-content button:hover {
+                                    box-shadow: 0px 0px 0px 4px #ffd3338a;
+                                    transition: 0.2s ease-in;
+                                }
+                                
+                                .s-img2-content button {
+                                    margin-top: -100px;
+                                    margin-right: 210px;
+                                    padding: 18px 40px 15px 30px;
+                                    font-size: 16px;
+                                    background-color: hwb(47 2% 3%);
+                                    border: none;
+                                    transition: 0.2s ease-in;
+                                }
+                                
+                                .s-img2-content button:hover {
+                                    box-shadow: 0px 0px 0px 4px #ffd3338a;
+                                    transition: 0.2s ease-in;
+                                }
+                                /* 4-icon ============ */
+                                
+                                .icon-4,
+                                .icon1 {
+                                    display: flex;
+                                    margin-top: 70px;
+                                    gap: 10px;
+                                    margin-bottom: 50px;
+                                    align-items: center;
+                                    /* border: 2px solid red; */
+                                }
+                                
+                                .icon-4 .icon1 {
+                                    /* border: 2px solid red; */
+                                    color: black;
+                                    background-color: #8a808018;
+                                    margin-left: 50px;
+                                    padding: 53px 83px;
+                                    gap: 25px;
+                                }
+                                
+                                .icon-4 .icon1 i {
+                                    /* border: 2px solid red; */
+                                    word-spacing: 2px;
+                                    letter-spacing: 1px;
+                                    margin: -5px;
+                                    font-weight: 900;
+                                    font-size: 50px;
+                                    margin-left: -60px;
+                                    color: #FFD333;
+                                }
+                                
+                                .icon-4 .icon1 p {
+                                    /* border: 2px solid red; */
+                                    font-size: 27.5px;
+                                }
+                                /* <!-- icon 4==========================--> */
+                                
+                                .product1 {
+                                    margin-bottom: 200px;
+                                }
+                                
+                                .product1 .pro-con {
+                                    /* border: 2px solid red; */
+                                    color: rgba(0, 0, 0, 0.76);
+                                    margin: 0px 57px;
+                                    padding: 20px 0px;
+                                    font-size: 40px;
+                                }
+                                
+                                .product1 .pro-con hr {
+                                    /* border: 2px solid red; */
+                                    margin-left: 280px;
+                                    margin-right: 9px;
+                                    margin-top: -20px;
+                                    margin-bottom: 50px;
+                                    border: 2px dashed rgba(0, 0, 0, 0.582);
+                                }
+                                /* <!-- products-12 =================== --> */
+                                
+                                .products .product-box {
+                                    /* border: 2px solid red; */
+                                    margin: 0px 57px;
+                                    display: grid;
+                                    column-gap: 50px;
+                                    row-gap: 50px;
+                                    grid-template-columns: auto auto auto auto;
+                                }
+                                
+                                .product-box .product {
+                                    /* border: 2px solid red; */
+                                    color: black;
+                                    display: flex;
+                                }
+                                
+                                .product img {
+                                    /* border: 2px solid red; */
+                                    width: 150px;
+                                    height: 130px;
+                                }
+                                
+                                .products .product-box .product h3 {
+                                    justify-content: end;
+                                    align-items: end;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                
+                                .product-box .product span {
+                                    /* border: 2px solid red; */
+                                    flex-direction: row;
+                                    width: 200px;
+                                    height: 130px;
+                                    /* background-color: yellow; */
+                                    margin-left: 3px;
+                                    transition: 0.3s ease-in-out;
+                                }
+                                
+                                .product-box .product span:hover {
+                                    background-color: #FFD333;
+                                    transition: 0.3s ease-in-out;
+                                }
