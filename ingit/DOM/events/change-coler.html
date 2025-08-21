@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+        
+        #box {
+            width: 50rem;
+            height: 25rem;
+            border: 1px solid black;
+        }
+        
+        #red {
+            background-color: red;
+            border: transparent;
+        }
+        
+        #green {
+            background-color: green;
+            border: transparent;
+        }
+        
+        #black {
+            background-color: black;
+            color: white;
+            border: transparent;
+        }
+        
+        #yellow {
+            background-color: yellow;
+            border: transparent;
+        }
+        
+        #blue {
+            background-color: blue;
+            border: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <p id="event">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam recusandae debitis doloribus inventore consequatur quia dolorem quas tempora dignissimos odit!
+        </p>
+        <div id="icon" style="text-align: center;">mouseover</div>
+        <input type="text" name="name" id="name">
+        <p id="keytext"></p>
+        <input type="text" name="name" id="name2">
+        <form action="" id="form">
+            Enter name: <input type="text" name="name">
+            <input type="submit" value="click">
+            <input type="reset" value="reset">
+        </form>
+        <select name="select" id="select">
+            <option value="choose lang.">choose lang.</option>
+            <option value="java">java</option>
+            <option value="phython">phython</option>
+            <option value="c/c++">c/c++</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <p id="formtext"></p>
+        <input type="text" name="name" id="inputtext">
+        <p id="intext"></p>
+
+
+
+
+    </div>
+    <button id="red">red</button>
+    <button id="black">black </button>
+    <button id="yellow">yellow</button>
+    <button id="blue">blue</button>
+    <button id="green">green</button>
+    <button id="Double-Click">Double-Click</button>
+
+
+    <script>
+        let box = document.getElementById("box")
+
+        let red = document.getElementById("red")
+        let black = document.getElementById("black")
+        let yellow = document.getElementById("yellow")
+        let green = document.getElementById("green")
+        let blue = document.getElementById("blue")
+
+        box.style.backgroundColor = "wheat"
+        let color = document.createElement("div")
+
+
+        red.addEventListener("click", (red) => {
+            box.style.backgroundColor = "red"
+            console.log("red");
+
+        })
+        black.addEventListener("click", (black) => {
+            box.style.backgroundColor = "black"
+            console.log("black");
+
+        })
+        yellow.addEventListener("click", (yellow) => {
+            box.style.backgroundColor = "yellow"
+            console.log("yellow");
+
+
+        })
+        blue.addEventListener("click", (blue) => {
+            box.style.backgroundColor = "blue"
+            console.log("blue");
+
+
+        })
+        green.addEventListener("click", (green) => {
+                box.style.backgroundColor = "green"
+                console.log("green");
+
+            })
+            //    mouse events ======
+            //  ------------double click event
+        let Double_Click = document.getElementById("Double-Click")
+
+        Double_Click.addEventListener("dblclick", (event) => {
+                box.style.backgroundColor = "orange";
+                let color = document.createElement("div")
+                console.log("Double-Click");
+
+            })
+            //  ------------mousedown event
+        let mousedown = document.getElementById("event")
+        mousedown.addEventListener("mousedown", (event) => {
+                mousedown.style.color = "red";
+                console.log("mousedown");
+            })
+            //  ------------mouseup event
+        let mouseup = document.getElementById("event")
+        mousedown.addEventListener("mouseup", (event) => {
+                mousedown.style.color = "gray";
+                console.log("mouseup");
+            })
+            //  ------------mousemove event
+        let mousemove = document.getElementById("event")
+        mousedown.addEventListener("mousemove", (event) => {
+                // box.style.color = "gray";
+                console.log("mousemove");
+            })
+            //  ------------mouseover event
+        let icon = document.getElementById("icon")
+        icon.addEventListener("mouseover", (event) => {
+                icon.style.scale = "1.4 ";
+                console.log("mouseover");
+            })
+            //  ------------mouseover event
+            // let mouseout = document.getElementById("mouseover")
+        icon.addEventListener("mouseout", (event) => {
+                icon.style.scale = "1";
+                console.log("mouseout");
+            })
+            // =====================================================================
+            //keyboard events ===============---------------
+            // ----------keydown -------
+        let name = document.getElementById("name")
+        let keytext = document.getElementById("keytext")
+        name.addEventListener("keydown", (event) => {
+
+                keytext.innerHTML = "You pressed a key inside the input field"
+            })
+            // ----------keypress -------
+        name.addEventListener("keypress", (event) => {
+                alert("You pressed a key inside the input field");
+            })
+            // ----------keyup -------
+
+        let name2 = document.getElementById("name2");
+        name2.addEventListener("keyup", (event) => {
+            name2.value = name2.value.toUpperCase();
+
+        })
+
+        //------------- Form Events:=============================================
+        //     submit =============
+        let submit = document.getElementById("form");
+
+        submit.addEventListener("submit", (event) => {
+                alert(submited)
+            })
+            //     reset =============
+        submit.addEventListener("reset", (event) => {
+                alert(reset)
+            })
+            //     change =============
+        select.addEventListener("change", (event) => {
+                let value = document.getElementById("select").value
+                formtext.innerHTML = "you are language is " + value;
+            })
+            //     input =============
+        inputtext.addEventListener("input", (event) => {
+
+                let value = document.getElementById("inputtext").value
+                intext.innerHTML = "Your input : " + value;
+
+            })
+            //     focus =============
+        inputtext.addEventListener("focus", (event) => {
+            let value = document.getElementById("inputtext").value
+            inputtext.style.backgroundColor = "green"
+            inputtext.style.color = "white"
+            intext.innerHTML = "Your input : " + value;
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+</head>
+
+<body>
+    <div class="container">go</div>
+</body>
+<script>
+    let div = document.querySelector(".container");
+    // --Create new Element in html
+    let nav = document.createElement("nav");
+    //  and set Attribute  and  Attribute_name
+    nav.setAttribute("class", "navbar");
+    nav.style.color = "black"
+    nav.style.height = "100px"
+    nav.style.backgroundColor = "red"
+
+    let heading = document.createElement("h1")
+    heading.setAttribute("id", "one")
+    heading.innerText = "hyy"
+    heading.style.border = "1px solid black"
+    heading.style.margin = "1rem"
+    heading.style.padding = "1rem"
+
+    div.appendChild(nav)
+    nav.appendChild(heading)
+</script>
+
+</html>
