@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+</head>
+
+<body>
+    <div class="container"></div>
+</body>
+<script>
+    let div = document.querySelector(".container");
+    // ------ create navbar
+    let nav = document.createElement("nav");
+    nav.setAttribute("class", "navbar");
+
+    // nav.style.border = "1px solid red";
+    nav.style.height = "50px";
+    nav.style.color = "white";
+    nav.style.backgroundColor = "black";
+    nav.style.display = "flex";
+    nav.style.gap = "23%";
+
+
+
+
+    //  ---- create ul for menu
+    let ul = document.createElement("ul");
+    let menu = ["Home", "About", "Contact"];
+
+    for (let i = 0; i < menu.length; i++) {
+        // - --create li for each element
+        let li = document.createElement("li");
+        li.innerText = menu[i];
+        ul.appendChild(li);
+    }
+
+    // ----------- css properties for ul
+    // ul.style.border = "1px solid red";
+    ul.style.listStyle = "none";
+    ul.style.display = "flex";
+    ul.style.gap = "20px";
+    ul.style.paddingleft = "5px";
+    ul.style.width = "60%";
+
+    // --------- create div for sign in
+    let singIn = document.createElement("div");
+    singIn.setAttribute("class", "sign");
+    singIn.innerText = "Sign-In";
+    singIn.style.color = "white"
+    singIn.style.marginTop = "1.7%"
+
+    div.appendChild(nav);
+    nav.appendChild(ul);
+    nav.appendChild(singIn);
+</script>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ================ 1
+
+        document.write("1.<br>")
+
+        let p = 230;
+        let l = 70;
+        // perimeter = 2*(length + width)
+        //p/2 =l+w
+        let w = (p / 2) - l;
+        document.write(" => give perimetr = 230 <br> ")
+        document.write(" => give lendth = 70 <br> ")
+        document.write(" => find width and area of ractangle?<br> ")
+        document.write(" => width :  ", w, "<br>")
+        area = l * w
+        document.write(" => Area :  ", area, "m^2<br>")
+            // ================ 2 ===============
+            // document.write("2.<br> ");
+            // let area = 96;
+            // let breadth = 8;
+            // document.write(" => give area = 96 <br> ");
+            // document.write(" => give breadth = 8 <br> ");
+            // //area=l*b
+            // let length = area / breadth;
+
+        // document.write(" => find lendth and perimeter of ractangle?<br> ");
+        // document.write("length :  ", length, "<br>");
+
+        // let perimeter = (length + breadth)
+        // let result = 2 * perimeter
+        // document.write(" => perimeter :  ", result, "<br>");
+        //  ====================3===========================
+        // document.write("3.<br> ");
+        // let length = 520
+        // let breadth = 140
+        // document.write(" => given ractagle region  whose lendth 520cm and breadth 140cm <br>")
+        // document.write("  => given, many tiles whose length and breadth are 13 cm and 7 cm <br>")
+        // let result1 = lendth * breadth
+        // document.write(" => all ractangle region is :", result1, "<br>")
+        // let length2 = 13
+        // let breadth2 = 7
+        // let result2 = length2 * breadth2
+        // document.write("and area of one tile :", result2, "<br>")
+        //     //  no. tile = ractangle region /areaof one tile
+        // let result3 = result1 / result2
+
+        // document.write(" => no .of tiles is :", result3)
+        // document.write("<br> => The number of tiles needed to cover the rectangular region is 800")
+        //========================================= 4 =========================
+        // document.write("4.<br> ");
+        // let l = 300
+        // let b = 150
+        // document.write(" => rectangular plot of land 300 m long and 150 m wide<br>")
+        // document.write(" => Find the cost of tiling at the rate of $6 per hundred square m<br>")
+        // let area = l * b
+        // document.write("plot area is :", area)
+        // document.write("<br> =>  one cost of tiling at the rate of $6 per hundred square m<br>")
+        // let rate = area / 6
+        // document.write(" => Divide the total area by 100m^2")
+        // document.write(" => number of hundred sqaure meter = 45000m^2/100m^2 = 450 <br>")
+        // document.write(" => Multiply the number of hundred square meters by the cost per hundred square meters.<br>")
+        // document.write("total cost  = 450 * 6$ = $", 450 * 6, "<br>")
+        //========================================= 5 =========================
+        // document.write("5.<br> ");
+        // let length = 20
+        // document.write(" => Calculate the area of the park.<br> ");
+        // let area = 1600 / 25 //total cost/rate per^2
+        // document.write("area is : ", area, "m^2 <br>");
+        // let breadth = 64 / 20 //area/length
+        // document.write("  => Calculate the breadth of the park.<br> ");
+        // document.write("length is : ", breadth, " m <br>");
+        // document.write("  => Calculate the perimeter of the park.<br> ");
+        // let perimeter = 2*(length + breadth)
+        // document.write("perimetre is: ",  perimeter, "  m <br> ");
+        // document.write(" => The breadth of the park is 3.2m, its perimeter is 46.4 m, and its area is 64 m^2 <br> ");
+        //========================================= 6[sqrt problem] =========================
+        // document.write("6.<br> ");
+        // document.write("Heron's formula: \(A=\sqrt{s(s-a)(s-b)(s-c)}\).<br> ");
+        // let a = 10,
+        //     b = 9,
+        //     p = 36
+        // document.write(" => The first side of the triangle is a=10cm.  <br> => The second side of the triangle is b=9cm.<br> => The perimeter of the triangle is P=36 cm <br>");
+        // document.write("=> The perimeter is the sum of all sides:(P=a+b+c).  <br> ");
+        // //  p = a + b + c
+        // let c = p - a - b
+        // document.write("Calculate the third side:c = ", c, "cm<br>")
+        // document.write("=> The semi-perimeter is half the perimeter: s=P/2.<br> ");
+        // let s = p / 2
+        // document.write("=> The semi-perimeter is:", s, " .<br> ");
+        // document.write("Use  Heron's formula A:<br> ");
+        // let sqrt = s * (s - a) * (s - b) * (s - c)
+
+        // document.write("A => ", sqrt, " <br> ");
+        //========================================= 7 =========================
+        // document.write("7.<br> ");
+
+        // document.write(" =>The base of the triangle is 50 cm.<br> => The area of the triangle{A} is 500 cm^2.<br> ");
+        // document.write("=> The formula for the area of a triangle is A = 1/2 *base* h.<br> ");
+        // let base = 50
+        // let h = 2 * 500 / base
+        // document.write("height : ", h, ".<br> ");
+        // document.write("=> The height of the triangle is 20 cm.<br> ");
+        //========================================= 8 =========================
+        // document.write("8.<br> ");
+        // document.write("=> The altitude of the triangle is 20cm<br>=>  The area of the triangle is 0.8 m^2<br> ");
+        // document.write("=> The formula for the area of a triangle is Area=1/2*base *height<br>   => 1m=100cm<br>");
+        // document.write("change unit m to cm 0.8m^2 = 0.8 *100 = ", .8 * 100, "<br> ")
+        // let area = 0.8 * 100,
+        //     height = 20
+        // let base = 2 * area / height
+        // document.write("base = 2 * area / height<br> ");
+
+        // document.write("base  : ", base, "<br>");
+        // document.write("The base of the triangle is 8m<br> ");
+        //========================================= 9 sqrt[problem] =========================
+        // document.write("9.<br> ");
+        // document.write("=> The length of the sides of the equilateral triangle is 12 cm.<br> ");
+        // document.write("=> The area of an equilateral triangle with side length \(a\) is given by the formula<br>Area=sqrt3/4*a^2.<br> ");
+        // let length = 12 //length =a
+        // let area = sqrt3 / 4(a) ^ 2
+        // document.write("area : ", area, " <br> ");
+        //========================================= 10 =========================
+        // document.write("10.<br> ");
+        // document.write("=> The triangle is an isosceles right-angled triangle.<br>=> The length of each equal side is 15 cm .<br>=>In an isosceles right-angled triangle, the two equal sides form the base and height.(so ,base=15cm and heigth =15cm).<br> ");
+        // document.write("=> The area of a right-angled triangle is given by A = 1/2*base*height<br> ");
+        // let height = 15,
+        //     base = 15,
+        //     area = 1 / 2 * height * base
+        // document.write("=> Calculate the area : ", area, "cm^2<br> ");
+        //========================================= 11 [not solve] =========================
+        // document.write("11.<br> ");
+        // document.write("=> The ratio of the base to the height is 8:5.<br>=> The area of the triangle is 320m^2. <br> ");
+        // let base = 8 * x
+        // let height = 5 * x
+        // document.write("=> The area of a triangle is given by the formula: Area=1/2*base *height.<br> ");
+        // document.write("=> Let the base be b=8x. <br>=> Let the height be h=5x.<br> ");
+        // document.write(" 320= 1/2*(8x)*(5x)  [Area=1/2* base* height] <br> ");
+        //========================================= 13  =========================
+        // document.write("13.<br> ");
+        // document.write("=> The area of the right triangle is 184 cm^2.  <br>=> One leg of the right triangle is 16cm long. <br> ");
+        // document.write("=> The area of a right triangle is given by the formula: Area=1/2*leg1*leg2.<br> ");
+        // document.write("=> Let A be the area,L1 be the known leg, and L2 be the unknown leg. <br> A=1/2*L1*L2.<br> ");
+        // let l2 = 2 * 184 / 16
+        // document.write("L2 is :", l2, ". <br> ");
+        // document.write("The length of the other leg is 23cm.<br> ");
+        //========================================= 14  =========================
+        // document.write("14.<br> ");
+        // document.write("=> The length of one diagonal is 46m.  <br> => The perpendicular distances from the other two vertices to the diagonal are(h1) 13m and(h2) 10 m<br> ");
+        // document.write("=> The area of a quadrilateral can be found by dividing it into two triangles using a diagonal. <br> => The area of a triangle is given by 1/2*d*(h1+h2)<br> ");
+        // document.write("=> The base of the first triangle is the diagonal, d=46m.<br> => The height of the first triangle is h1=13m.<br> => Area of the first triangle: A1=1/2*d* h1<br> ");
+
+        // let A = 1 / 2 * 46 * (13 + 10)
+
+
+        // document.write("A is :", A, "m^2<br> ");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login -Page</title>
+</head>
+
+<body>
+    <script>
+        let body = document.querySelector("body")
+
+        console.log(body);
+        body.style.backgroundColor = "pink"
+        body.style.display = "flex"
+        body.style.justifyContent = "center"
+        body.style.alignContent = "center"
+        body.style.marginTop = "50px"
+
+        //     main div -----------------
+
+        let div = document.createElement("div")
+            // div.style.border = "1px solid red"
+        div.style.width = "30%"
+        body.style.alignContent = "center"
+        div.style.height = "80vh"
+        div.style.backgroundColor = "Darkblue"
+        div.style.borderRadius = "15px"
+
+
+        let signDiv = document.createElement("div")
+        signDiv.style.color = "white"
+        signDiv.innerText = "Login-In"
+        signDiv.style.fontSize = "2rem"
+        signDiv.style.fontWeight = "900"
+        signDiv.style.textAlign = "center"
+        signDiv.style.padding = "5px"
+
+        let inputDiv = document.createElement("div")
+            // inputDiv.style.border = "1px solid red"
+        inputDiv.style.width = "99%"
+        inputDiv.style.height = "50%"
+        inputDiv.style.display = "flex"
+        inputDiv.style.flexDirection = "column"
+        inputDiv.style.gap = "20px"
+        inputDiv.style.marginTop = "40px"
+
+
+
+        let inputEmail = document.createElement("input")
+        inputEmail.style.margin = "10px"
+        inputEmail.style.height = "30px"
+        inputEmail.style.background = "transparent"
+        inputEmail.style.border = "transparent"
+        inputEmail.style.border = "1px solid white"
+        inputEmail.style.borderRadius = "5px"
+
+
+
+        let inputPassword = document.createElement("input")
+        inputPassword.style.margin = "10px"
+        inputPassword.style.height = "30px"
+        inputPassword.style.background = "transparent"
+        inputPassword.style.border = "transparent"
+        inputPassword.style.border = "1px solid white"
+        inputPassword.style.borderRadius = "5px"
+
+
+
+        let btnspan = document.createElement("span")
+        btnspan.style.display = "flex"
+        btnspan.style.justifyContent = "center"
+
+
+        let button = document.createElement("button")
+        button.style.width = "80px"
+        button.style.height = "30px"
+        button.style.color = "black"
+        button.style.border = "transparent"
+        button.style.borderRadius = "5px"
+
+
+
+        let p = document.createElement("p")
+            // p.style.border = "1px solid white"
+
+        p.innerText = "forgatePassword?"
+        p.style.color = "white"
+            // p.style.float = "end"
+
+
+
+
+
+        //  appends =================
+        body.append(div);
+        div.append(signDiv);
+        div.append(inputDiv);
+        inputDiv.append(inputEmail);
+        inputDiv.append(inputPassword);
+        inputDiv.append(btnspan);
+        btnspan.append(button);
+        inputDiv.append(p);
+    </script>
+</body>
+
+</html>
