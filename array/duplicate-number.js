@@ -21,6 +21,6 @@ class Solution {
 
     }
 }
-let arr = [1, 1, 2, 2];
+let arr = [1, 1, 1, 2, 2, 2];
 const find = new Solution();
 console.log(find.findDuplicates(arr));
