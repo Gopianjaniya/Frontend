@@ -1,0 +1,107 @@
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                place-items: center;
+                width: 100%;
+                background-color: #af5656;
+            }
+            
+            .container {
+                width: 24%;
+                height: 70vh;
+                background-color: black;
+                margin-top: 6rem;
+                border-radius: 10px;
+                box-shadow: 0px 0px 9px white;
+            }
+            
+            .container .input {
+                padding: .8rem;
+                border-radius: 10px;
+                background-color: black;
+            }
+            
+            .container .enterNum {
+                height: 10vh;
+                color: black;
+                display: flex;
+                padding: 1px;
+                background-color: rgb(196, 193, 193);
+                border: transparent;
+                border-radius: 3px;
+                font-size: 1.5rem;
+                margin: 0 40px;
+            }
+            
+            .container .showNum {
+                display: grid;
+                grid-template-columns: 60px 60px 60px 60px;
+                column-gap: 1.2rem;
+                row-gap: 1rem;
+                margin-top: 1rem;
+                background-color: black;
+            }
+            
+            .container .showNum button {
+                background-color: rgb(27, 26, 26);
+                display: grid;
+                place-content: center;
+                height: 50px;
+                border-radius: 40%;
+                color: white;
+                margin-left: 30px;
+                border: 1px solid rgb(59, 58, 58);
+                font-size: 1.5rem;
+            }
+            
+            .container .showNum button:hover {
+                box-shadow: 0px 0px 5px 0px;
+                cursor: pointer;
+            }
+            /* for mobile  */
+            
+            @media (min-width:320px)and(max-width:480px) {
+                .container {
+                    width: 100%;
+                    height: 100vh;
+                    background-color: black;
+                    margin-top: 2rem;
+                    border: 1px solid rebeccapurple;
+                }
+                .container .showNum {
+                    grid-template-columns: 80px 80px 80px 80px;
+                    column-gap: 2.4rem;
+                    row-gap: 2.4rem;
+                    margin-top: 1rem;
+                    background-color: black;
+                }
+            }
+            
+            @media (min-width:481px)and (max-width:768px) {
+                .container {
+                    width: 100%;
+                    height: 100vh;
+                    background-color: black;
+                    margin-top: 4rem;
+                }
+                .container .enterNum {
+                    height: 17vh;
+                    font-size: 2rem;
+                }
+                .container .showNum {
+                    grid-template-columns: 80px 80px 80px 80px;
+                    column-gap: 8rem;
+                    row-gap: 1rem;
+                    margin-top: 1rem;
+                    background-color: black;
+                }
+                .container .showNum button {
+                    height: 65px;
+                    border-radius: 40%;
+                    color: white;
+                    margin-left: 30px;
+                    border: 1px solid rgb(59, 58, 58);
+                    font-size: 1.5rem;
+                }
+            }
