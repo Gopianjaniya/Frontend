@@ -1,44 +1,72 @@
- let input = document.getElementById("input");
- let text = document.querySelector(".text");
- localStorage.clear();
+let input = document.getElementById("input");
+let addBtn = document.getElementById("addBtn");
+let text = document.querySelector(".text");
+let all = document.getElementById("allBtn");
+let complete = document.getElementById("completeBtn");
+let pending = document.getElementById("pendingBtn");
 
+addBtn.addEventListener("click", (event) => {
+    if (input.value == "") {
+        alert("Please Enter task");
+    } else {
+        let ul = document.createElement("ul");
+        ul.innerHTML = input.value;
 
- function add() {
-     // localStorage.clear();
-     if (input.value == "") {
-         alert("Please Enter task");
-     } else {
+        //  delete button ------
+        let dltBtn = document.createElement("button");
+        dltBtn.innerText = "Delete";
 
-         let ul = document.createElement("ul");
-         ul.setAttribute("class", "ultask")
-         ul.innerHTML = `${input.value}  <button onclick="remove()" id="dtlBtn">Delete</button>`;
-         // storage ----------
+        ul.appendChild(dltBtn);
+        text.appendChild(ul);
 
-         let task = [];
-         newTask = {
-             id: task.length + 1,
-             task: input.value
-         };
-         task.push[newTask];
-         let convert = JSON.stringify(newTask);
-         //  set-----------
-         localStorage.setItem("todo", convert);
-         input.value = "";
-         text.appendChild(ul);
-         //  get -----------
-         let getItem = localStorage.getItem("todo");
-         console.log(getItem);
+        input.value = "";
+        saveData();
+    }
+});
 
+// save data ---------
+function saveData() {
+    localStorage.setItem("Data", text.innerHTML);
+}
 
-         //  delete button ------
-         let DeleteBtn = ul.querySelector("button")
-         DeleteBtn.addEventListener("click", remove)
+// get data ---------
+function getData() {
+    text.innerHTML = localStorage.getItem("Data");
+}
+text.addEventListener("click", (event) => {
+    if (event.target.tagName === "BUTTON") {
+        event.target.parentElement.remove();
+        saveData();
+    } else if (event.target.tagName === "UL") {
+        event.target.classList.toggle("completed");
+        saveData();
+    }
+});
 
-         function remove() {
-             ul.remove()
-                 // localStorage.removeItem("todo");
+//  for all-----
+all.addEventListener("click", (event) => {
+    getData();
+});
 
-         }
+complete.addEventListener("click", (event) => {
+    let item = text.getElementsByTagName("ul");
+    console.log(item);
+    for (let i = 0; i < item.length; i++) {
+        if (item[i].classList.contains("completed")) {
+            item[i].style.display = "block";
+        } else {
+            item[i].style.display = "none";
+        }
+    }
+});
 
-     }
- };
+pending.addEventListener("click", (event) => {
+    let item = text.getElementsByTagName("ul");
+    for (let i = 0; i < item.length; i++) {
+        if (item[i].classList.contains("completed")) {
+            item[i].style.display = "none";
+        } else {
+            item[i].style.display = "block";
+        }
+    }
+});

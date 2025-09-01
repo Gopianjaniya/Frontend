@@ -2,24 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Session</title>
 </head>
 
 <body>
     <div class="todo">
-        <input type="text" id="input" placeholder="Enter task">
-        <button onclick="add()" class="addBtn">add</button>
-        <div class="text">
+        <input type="text" id="input" placeholder="Enter task" />
+        <!--  add button -->
+        <button id="addBtn" class="addBtn">add</button>
 
+        <div class="buttons" id="btns">
+            <button id="allBtn" class="btns">All</button>
+            <button id="completeBtn" class="btns">Complete</button>
+            <button id="pendingBtn" class="btns">Pending</button>
         </div>
+        <div class="text"></div>
     </div>
-    <script src="todo.js">
-    </script>
+    <script src="todo.js"></script>
+
 </body>
 
 </html>
