@@ -43,11 +43,11 @@ text.addEventListener("click", (event) => {
     }
 });
 
-//  for all-----
+//  for all data-----
 all.addEventListener("click", (event) => {
     getData();
 });
-
+//  for complete data --------
 complete.addEventListener("click", (event) => {
     let item = text.getElementsByTagName("ul");
     console.log(item);
@@ -60,6 +60,7 @@ complete.addEventListener("click", (event) => {
     }
 });
 
+//  for pending data
 pending.addEventListener("click", (event) => {
     let item = text.getElementsByTagName("ul");
     for (let i = 0; i < item.length; i++) {
