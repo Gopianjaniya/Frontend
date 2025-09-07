@@ -50,7 +50,7 @@ all.addEventListener("click", (event) => {
 //  for complete data --------
 complete.addEventListener("click", (event) => {
     let item = text.getElementsByTagName("ul");
-    console.log(item);
+    // console.log(item);
     for (let i = 0; i < item.length; i++) {
         if (item[i].classList.contains("completed")) {
             item[i].style.display = "block";
